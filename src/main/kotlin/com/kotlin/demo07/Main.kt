@@ -11,6 +11,10 @@ fun main(args: Array<String>) {
 	val child = Child1()
 	println("child = ${child.foo()}")
 
+	val list = mutableListOf(1,2,3)
+	list.swap(0,2)
+
+
 }
 
 class Obj() {
@@ -67,5 +71,11 @@ interface MyInterface {
 	fun foo() {
 		println(property)
 	}
+}
+
+fun <T> MutableList<T>.swap(index1: Int,index2: Int){
+	val tmp = this[index1]
+	this[index1] = this[index2]
+	this[index2] = tmp
 }
 
