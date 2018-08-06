@@ -2,26 +2,26 @@ package com.kotlin.syntx
 
 import java.util.*
 
-fun demo(source: List<Int>){
+fun demo(source: List<Int>) {
     val list = ArrayList<Int>()
 
-    for(item in source){
+    for (item in source) {
         list.add(item)
     }
-    for(i in 0..source.size-1){
+    for (i in 0..source.size - 1) {
         list[i] = source[i]
     }
 }
 
-fun calendarDemo(){
+fun calendarDemo() {
     val calendar = Calendar.getInstance()
 
-    if(calendar.firstDayOfWeek == Calendar.SUNDAY){
+    if (calendar.firstDayOfWeek == Calendar.SUNDAY) {
         calendar.firstDayOfWeek = Calendar.MONDAY
     }
 }
 
-fun voidDemo(){
+fun voidDemo() {
     val v = KotlinJava.vid()
     println("v = $v")
 }

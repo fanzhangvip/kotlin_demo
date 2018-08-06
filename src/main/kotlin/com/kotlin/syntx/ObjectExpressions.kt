@@ -3,7 +3,7 @@ package com.kotlin.syntx
 import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type
 
-open class A(x: Int){
+open class A(x: Int) {
     public open val y: Int = x
 }
 
@@ -26,11 +26,12 @@ class CC {
     }
 }
 
-class MyClass1{
-    companion object Obj{
+class MyClass1 {
+    companion object Obj {
         val a = 1
         fun crt(): MyClass1 = MyClass1()
     }
+
     val b = 2
 }
 
@@ -39,7 +40,7 @@ interface Factory<T> {
 }
 
 class MyCls {
-    companion object : Factory<MyClass1>{
+    companion object : Factory<MyClass1> {
         override fun create(): MyClass1 = MyClass1()
     }
 }
@@ -52,7 +53,7 @@ open class TypeLiteral<T> {
 inline fun <reified T> typeLiteral(): TypeLiteral<T> = object : TypeLiteral<T>() {}
 
 fun main(args: Array<String>) {
-    val ab: A = object : A(1),B{
+    val ab: A = object : A(1), B {
         override val y = 15
     }
 

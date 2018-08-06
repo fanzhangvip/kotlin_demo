@@ -53,8 +53,8 @@ fun main(args: Array<String>) {
 //    testNull5(null)
     testNull6(1, "a")
 
-    var a:String
-    var b:String?
+    var a: String
+    var b: String?
 //    a = null
     b = null
     // ? 和?. 新增的null机制，有效避免空指针
