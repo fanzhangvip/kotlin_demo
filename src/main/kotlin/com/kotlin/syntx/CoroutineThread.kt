@@ -104,7 +104,7 @@ fun main(args: Array<String>) {
             println("Coroutine 2")
         }
         c2.join() // 2
-        c1.join() // 1
+//        c1.join() // 1
         println("the main")
     }
 
